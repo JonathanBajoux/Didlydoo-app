@@ -50,6 +50,8 @@ let newEventAllDate = document.createElement('div')
                 newEventDate.appendChild(document.createTextNode(dates.date))
         }
 
+// créa user 
+
 
 
 }
