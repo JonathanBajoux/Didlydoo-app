@@ -17,3 +17,4 @@ export function del () {
     setTimeout(del , 500)
     
 }
+
