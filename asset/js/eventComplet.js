@@ -48,6 +48,18 @@ let newEventAllDate = document.createElement('div')
                 newEventDate.classList.add('eventDate')
                 newEventAllDate.appendChild(newEventDate)
                 newEventDate.appendChild(document.createTextNode(dates.date))
+
+
+                for (let attendees of dates.attendees) {
+
+                    let newEventAttendees = document.createElement('div')
+                    newEventAttendees.classList.add('eventAttendees')
+                    newEventAllDate.appendChild(newEventAttendees)
+                    newEventAttendees.appendChild(document.createTextNode(attendees.name))
+
+                    
+                }
+
         }
 
 // créa user 

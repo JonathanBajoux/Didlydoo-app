@@ -1,12 +1,15 @@
 import { eventsComplet } from "./asset/js/EventComplet.js";
 import { dateUser } from "./asset/js/dateUser.js";
 import { vis } from "./asset/js/vis.js";
+import { addDate } from "./asset/js/addDate.js";
 
 eventsComplet()
 dateUser()
 // document.getElementById('test').addEventListener('click' , eventsComplet)
 
 document.getElementById('newEvent').addEventListener('click' , vis)
+document.getElementById('cancelButton').addEventListener('click' , vis)
+document.getElementById("newDateBtn").addEventListener("click", addDate)
 
 
 
@@ -26,15 +29,7 @@ document.getElementById('newEvent').addEventListener('click' , vis)
 //     datescontainer.appendChild(aDate);
 // })*/
 
-// document.getElementById("newDateBtn").addEventListener("click", addDate)
 
-// function addDate() {
-//     let aDate = document.createElement("input");
-//     aDate.type = "date";
-//     aDate.className = "datelist";
-//     //datescontainer.appendChild(aDate);
-//     document.body.appendChild(aDate)
-// }
 
 // submitBtn.addEventListener("click", () => {
 
