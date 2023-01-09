@@ -79,35 +79,48 @@ label {
 
 .event {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: hsl(140deg, 50%, 100%);
+  background-color: rgba(255, 255, 255, 0.692);
   padding: 3vw;
   margin: 7vw;
   border-radius: 5vw 1vw 5vw 1vw;
 }
-
-.eventTitle {
+.event .eventTitle {
   font-family: "Arimo", serif;
   display: flex;
   flex-direction: column;
 }
-
-.eventAuteur {
+.event .eventAuteur {
   font-family: "Arimo", serif;
   font-style: italic;
   font-size: smaller;
 }
-
-.eventDesc {
+.event .eventDesc {
   font-family: "Nanum Myeongjo", serif;
   font-weight: 500;
 }
-
-.eventAllDate {
+.event .eventAllDate {
   font-family: "Nanum Myeongjo", serif;
   display: flex;
   flex-direction: row;
   justify-content: end;
   justify-content: space-evenly;
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   font-weight: bold;
+  border: solid 2px black;
+}
+.event .boutons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+.event .imagebtn {
+  width: 80%;
+}
+.event .poubelle {
+  width: 8vw;
+  left: 15vw;
+}
+.event .fleche_haut {
+  width: 8vw;
+  right: 50vw;
 }/*# sourceMappingURL=style.css.map */
