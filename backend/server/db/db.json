@@ -1,5 +1,34 @@
 [
   {
+    "id": "4f5ccd12b81e",
+    "name": "Test",
+    "author": "546464",
+    "description": "Test test test",
+    "dates": [
+      "2023-01-09",
+      "2023-01-17",
+      "2023-01-09",
+      "2023-01-17"
+    ],
+    "created_at": "2023-01-09T15:37:06.587Z",
+    "num_modification": 0,
+    "last_modification": "2023-01-09T15:37:06.587Z",
+    "attendees": []
+  },
+  {
+    "id": "7830a5caf41b",
+    "name": "Pierre",
+    "author": "Blablabla",
+    "description": "3156412",
+    "dates": [
+      "2023-01-09"
+    ],
+    "created_at": "2023-01-09T15:36:38.150Z",
+    "num_modification": 0,
+    "last_modification": "2023-01-09T15:36:38.150Z",
+    "attendees": []
+  },
+  {
     "id": "7b15d6b1996c",
     "name": "Test",
     "author": "DAtes",

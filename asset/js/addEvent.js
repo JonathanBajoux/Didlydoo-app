@@ -13,7 +13,7 @@ export function addEvent() {
     if (number.value < today || number == undefined) {
       window.alert("Please provide a correct date format.")
     } else {
-      if (typeof eventName.value === "string" && eventName.value !== "" && typeof eventAuthor === "string" && eventAuthor !== "" && typeof eventDescription === "string" && eventDescription !== "") {
+      if (eventName.value !== "" && eventAuthor !== "" && eventDescription !== "") {
         for (let date of eventDate) {
           arrayOfDates.push(date.value);
         }
