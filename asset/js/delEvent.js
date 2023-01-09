@@ -10,13 +10,5 @@ export function delEvent(id) {
         .then((json) => console.log(json))
 }
 
-  //créa delButton
-//   let id = elem.id
-//   let delButton = document.createElement('button')
-//   delButton.setAttribute("type", "button");
-//   delButton.classList.add("delButton");
-//   delButton.addEventListener("click", () => {
-//       delEvent(id)
-//   });
-//   newEventTitle.appendChild(delButton)
+
 

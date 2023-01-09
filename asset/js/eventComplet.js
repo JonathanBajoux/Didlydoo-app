@@ -52,6 +52,33 @@ export async function eventsComplet() {
         newEventAllDate.classList.add('eventAllDate')
         newEvent.appendChild(newEventAllDate)
 
+
+        //créa div boutons
+        let divBtn = document.createElement('div')
+        divBtn.classList.add('boutons')
+        newEvent.appendChild(divBtn)
+
+        //créa poubelle
+        let newEventBin = document.createElement('button')
+        newEventBin.classList.add('poubelle')
+        divBtn.appendChild(newEventBin)
+        let id = elem.id
+        newEventBin.addEventListener("click", () => {
+            delEvent(id);})
+        let poubelleImg = document.createElement('img')
+        poubelleImg.src = "/asset/icone_poubelle/disposition.png"
+        poubelleImg.classList.add('imagebtn')
+        newEventBin.appendChild(poubelleImg)
+        
+        //créa flèche
+        let newEventArrow = document.createElement('button')
+        newEventArrow.classList.add('fleche_haut')
+        divBtn.appendChild(newEventArrow)
+        let arrowImg = document.createElement('img')
+        arrowImg.src = "/asset/icone_fleche_haut/fleches-vers-le-haut.png"
+        arrowImg.classList.add('imagebtn')
+        newEventArrow.appendChild(arrowImg)
+
         for (let dates of elem.dates) {
 
             let newEventDate = document.createElement('div')
@@ -59,7 +86,7 @@ export async function eventsComplet() {
             newEventAllDate.appendChild(newEventDate)
             newEventDate.appendChild(document.createTextNode(dates.date))
 
-            // créa user 
+
             for (let attendees of dates.attendees) {
 
                 let newEventAttendees = document.createElement('div')
@@ -69,6 +96,14 @@ export async function eventsComplet() {
 
 
             }
+
         }
+
+        // créa user 
+
+
+
     }
+
+
 }
