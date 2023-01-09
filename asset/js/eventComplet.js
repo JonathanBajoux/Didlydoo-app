@@ -49,7 +49,7 @@ let newEventAllDate = document.createElement('div')
                 newEventAllDate.appendChild(newEventDate)
                 newEventDate.appendChild(document.createTextNode(dates.date))
 
-
+                // créa user 
                 for (let attendees of dates.attendees) {
 
                     let newEventAttendees = document.createElement('div')
@@ -62,7 +62,7 @@ let newEventAllDate = document.createElement('div')
 
         }
 
-// créa user 
+
 
 
 

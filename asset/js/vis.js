@@ -10,11 +10,13 @@
         }
         
         let allDate = document.getElementsByClassName('datelist')
+        
 
-        // for (let elem of allDate) {
+        for (let elem of allDate) {
             
-        //     elem.
-        // }
+            elem.remove()
+        }
+        
 
     }
     
