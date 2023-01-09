@@ -10,8 +10,7 @@ export function addEvent() {
 
      fetch("http://localhost:3000/api/events/", {
        method: "POST",
-       body: JSON.stringify({completEvent
-       }),
+       body: completEvent,
        
        headers: {
          "Content-type": "application/json;"
