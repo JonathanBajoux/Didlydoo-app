@@ -1,27 +1,35 @@
 export function addEvent() {
 
-    let completEvent = {
-        name: "Test",
-        dates: ['2024-06-03', '2025-07-03'],
-        author: "Didier",
-        description: "Ceci est un test pour voir si tout est ok"
-    };
+  const eventName = document.getElementById("eventName");
+  const eventAuthor = document.getElementById("author");
+  const eventDescription = document.getElementById("description");
+  const eventDate = document.getElementsByClassName("date");
+  let arrayOfDates = [];
 
-    console.log(JSON.stringify(completEvent));
+  for (let date of eventDate) {
+    arrayOfDates.push(date.value);    
+  }
 
+  console.log(arrayOfDates)
+    
+    let completEvent = { 
+       "name" : eventName.value, 
+       "dates" : arrayOfDates, 
+       "author" : eventAuthor.value, 
+       "description" : eventDescription.value }
+   
+        console.log(completEvent)
 
-    fetch('http://localhost:3000/api/events/', {
-        method: "POST",
-        headers: {
-            "Content-type": "application/json"
-        },
-        body: JSON.stringify(completEvent
-        ),
+     fetch("http://localhost:3000/api/events/", {
+       method: "POST",
+       body: JSON.stringify(completEvent),
 
-       
-    })
-        .then((response) => response.json())
-        .then((json) => console.log(json))
-        .catch((error) => { console.error('Error', error) })
+       headers: {
+         "Content-type": "application/json"
+       }
+     })
+     
+       .then((response) => response.json())
+       .then((json) => console.log(json));
 }
 

@@ -42,8 +42,6 @@ export async function eventsComplet() {
         newEventAllDate.classList.add('eventAllDate')
         newEvent.appendChild(newEventAllDate)
 
-
-
         for (let dates of elem.dates) {
 
             let newEventDate = document.createElement('div')
@@ -61,16 +59,11 @@ export async function eventsComplet() {
 
 
             }
-
         }
-      
 
-        
 
 
 
 
     }
-
-
 }
