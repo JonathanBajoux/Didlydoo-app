@@ -26,8 +26,8 @@ export async function eventsComplet() {
         newEventPatchButton.className = "event-patch"
         newEvent.appendChild(newEventPatchButton)
 
-        let id = elem.id;
-        newEventPatchButton.addEventListener('click', () => { patch(id); })
+        let idPatch = elem.id;
+        newEventPatchButton.addEventListener('click', () => { patch(idPatch); })
 
         //créa titre 
         let newEventTitle = document.createElement('h2')
