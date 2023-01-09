@@ -111,6 +111,7 @@ label {
     padding: 3vw;
     margin: 7vw;
     border-radius: 5vw 1vw 5vw 1vw;
+
     .eventTitle {
         font-family: 'Arimo', serif;
         display: flex;
@@ -121,14 +122,14 @@ label {
         font-family: 'Arimo', serif;
         font-style: italic;
         font-size: smaller;
-    
+
     }
-    
+
     .eventDesc {
         font-family: 'Nanum Myeongjo', serif;
         font-weight: 500;
     }
-    
+
     .eventAllDate {
         font-family: 'Nanum Myeongjo', serif;
         display: flex;
@@ -138,33 +139,80 @@ label {
         font-size: 0.5rem;
         font-weight: bold;
         border: solid 2px black;
-    
+
     }
+
     .boutons {
         display: flex;
         justify-content: space-between;
         margin-top: 5vw;
     }
+
     .imagebtn {
         width: 80%;
     }
-    
+
     .poubelle {
-        
+
         width: 8vw;
         left: 15vw;
-        
+
     }
-    
+
     .fleche_haut {
-        
+
         width: 8vw;
         right: 50vw;
-        
+
     }
 }
 
+@media screen and (min-width: 426px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        margin-top: 15vw;
+        height: 55vh;
 
+        .author {
+            margin-left: 10.5vw;
+        }
 
+        .description {
+            margin-left: 8vw;
+        }
 
+        .datescontainer {
+            margin-top: 3vw;
+            margin-left: 16.5vw;
+        }
 
+        .formbutton {
+
+            width: 50vw;
+            height: auto;
+            font-size: 20vw;
+            border: 5vw;
+
+            #createButton {
+                width: 10vw;
+                height: 5vh;
+                font-size: 2vw;
+            }
+
+            #cancelButton {
+                width: 10vw;
+                font-size: 2vw;
+            }
+        }
+    }
+
+    .event {
+        .boutons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5vw;
+        }
+    }
+}
