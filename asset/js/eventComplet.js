@@ -1,3 +1,5 @@
+import { delEvent } from "./delEvent.js";
+
 export async function eventsComplet() {
     //récupération des données Json pour les events
     const response = await fetch(
@@ -50,6 +52,9 @@ export async function eventsComplet() {
         let newEventBin = document.createElement('button')
         newEventBin.classList.add('poubelle')
         divBtn.appendChild(newEventBin)
+        let id = elem.id
+        newEventBin.addEventListener("click", () => {
+            delEvent(id);})
         let poubelleImg = document.createElement('img')
         poubelleImg.src = "/asset/icone_poubelle/disposition.png"
         poubelleImg.classList.add('imagebtn')
