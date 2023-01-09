@@ -1,5 +1,19 @@
 [
   {
+    "id": "ad33e14c366c",
+    "name": "Test",
+    "author": "Didier",
+    "description": "Ceci est un test pour voir si tout est ok",
+    "dates": [
+      "2024-06-03",
+      "2025-07-03"
+    ],
+    "created_at": "2023-01-09T11:05:56.185Z",
+    "num_modification": 0,
+    "last_modification": "2023-01-09T11:05:56.185Z",
+    "attendees": []
+  },
+  {
     "id": "f5b6564b5dc4",
     "name": "My sweet 16",
     "description": "I am going to be 16, let us all party together! Help me pick a date so we can go together",
