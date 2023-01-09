@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20vw;
+}
+
+#newEvent {
+    margin-left: 80vw;
+    display: flex;
+}
+
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+    margin-top: 15vw;
+    //border: solid 1px black;
+    width: 75vw;
+    height: 40vh;
+    margin-left: 12vw;
+    background-color: lightblue;
+
+    .name {
+        margin-left: 11vw;
+        margin-top: 5vw;
+    }
+
+    .author {
+        margin-left: 9vw;
+        margin-top: 2vw;
+    }
+
+    .description {
+        margin-left: 3vw;
+        display: flex;
+        
+    }
+    .descriptioninput{
+        height: 15vw;
+    }
+    .datescontainer {
+        margin-left: 15vw;
+        margin-top: 8vw;
+    }
+}
+
+.formbutton {
+    display: flex;
+    flex-direction: row;
+
+    width: 2vw;
+    margin: auto;
+    justify-content: space-evenly;
+
+    .create {
+        margin-right: 10vw;
+    }
+}

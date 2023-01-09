@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20vw;
+}
+
+#newEvent {
+  margin-left: 80vw;
+  display: flex;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  margin-top: 15vw;
+  width: 75vw;
+  height: 40vh;
+  margin-left: 12vw;
+  background-color: lightblue;
+}
+.form .name {
+  margin-left: 11vw;
+  margin-top: 5vw;
+}
+.form .author {
+  margin-left: 9vw;
+  margin-top: 2vw;
+}
+.form .description {
+  margin-left: 3vw;
+  display: flex;
+}
+.form .descriptioninput {
+  height: 15vw;
+}
+.form .datescontainer {
+  margin-left: 15vw;
+  margin-top: 8vw;
+}
+
+.formbutton {
+  display: flex;
+  flex-direction: row;
+  width: 2vw;
+  margin: auto;
+  justify-content: space-evenly;
+}
+.formbutton .create {
+  margin-right: 10vw;
+}/*# sourceMappingURL=style.css.map */

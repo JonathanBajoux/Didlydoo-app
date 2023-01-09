@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Didlydoo</title>
     <script src="/index.js" type="module"></script>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/asset/style.css">
 </head>
+
 <body>
     <header>
         <h1>Didlydoo</h1>
         <button id="newEvent">+</button>
     </header>
     <main id="main">
-    <form>
+    
         <div class="form" id="form">
-            <label for="name">Event:</label>
-            <input type="text" name="name" class="name" id="eventName">
-            <label for="author">Author:</label>
-            <input type="text" name="author" class="author" id="author">
-            <label for="description">Description:</label>
-            <input type="text" name="description" class="description" id="description">
-            <div class="datescontainer">
+            <span class="name">
+                <label for="name">Event:</label>
+                <input type="text" name="name" class="nameinput" id="eventName">
+            </span>
+            <span class="author">
+                <label for="author">Author:</label>
+                <input type="text" name="author" class="authorinput" id="author">
+            </span>
+            <div class="description">
+                <label for="description">Description:</label>
+                <input type="text" name="description" class="descriptioninput" id="description">
+            </div>
+            <div class="datescontainer" id="datescontainer">
                 <input type="date" name="date" class="date" class="datelist" id="date">
                 <button id="newDateBtn">Add date</button>
             </div>
-            <button id="createButton">Create</button>
-            <button id="cancelButton">Cancel</button>
+            <div class="formbutton">
+                <button id="createButton" class="create">Create</button>
+                <button id="cancelButton" class="cancel">Cancel</button>
+            </div>
         </div>
-    </form>
+    
     </main>
 
     <footer>
@@ -37,4 +47,5 @@
     </footer>
 
 </body>
+
 </html>
