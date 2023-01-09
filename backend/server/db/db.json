@@ -1,16 +1,16 @@
 [
   {
     "id": "8fbbc17ffa0b",
-    "name": "Test",
-    "author": "Pierre",
-    "description": "Let's go",
+    "name": "Test 3",
+    "author": "Jsp",
+    "description": "?!",
     "dates": [
       "2023-01-09",
       "2023-01-11"
     ],
     "created_at": "2023-01-09T13:20:06.667Z",
-    "num_modification": 0,
-    "last_modification": "2023-01-09T13:20:06.667Z",
+    "num_modification": 2,
+    "last_modification": "2023-01-09T15:05:09.809Z",
     "attendees": []
   },
   {
@@ -42,14 +42,14 @@
   {
     "id": "a714312cd141",
     "name": "Another test",
-    "author": "Bullyman",
-    "description": "Blablablablabla",
+    "author": "Test",
+    "description": "Bla",
     "dates": [
       "2023-01-25"
     ],
     "created_at": "2023-01-09T12:57:05.389Z",
-    "num_modification": 0,
-    "last_modification": "2023-01-09T12:57:05.389Z",
+    "num_modification": 1,
+    "last_modification": "2023-01-09T14:49:31.349Z",
     "attendees": []
   },
   {

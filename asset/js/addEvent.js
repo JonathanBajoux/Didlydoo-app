@@ -6,30 +6,43 @@ export function addEvent() {
   const eventDate = document.getElementsByClassName("date");
   let arrayOfDates = [];
 
-  for (let date of eventDate) {
-    arrayOfDates.push(date.value);    
-  }
+  let today = new Date();
 
-  console.log(arrayOfDates)
-    
-    let completEvent = { 
-       "name" : eventName.value, 
-       "dates" : arrayOfDates, 
-       "author" : eventAuthor.value, 
-       "description" : eventDescription.value }
-   
+  for (let number of eventDate) {
+    console.log(number)
+    if (number.value < today || number == undefined) {
+      window.alert("Please provide a correct date format.")
+    } else {
+      if (typeof eventName.value === "string" && eventName.value !== "" && typeof eventAuthor === "string" && eventAuthor !== "" && typeof eventDescription === "string" && eventDescription !== "") {
+        for (let date of eventDate) {
+          arrayOfDates.push(date.value);
+        }
+
+        console.log(arrayOfDates)
+
+        let completEvent = {
+          "name": eventName.value,
+          "dates": arrayOfDates,
+          "author": eventAuthor.value,
+          "description": eventDescription.value
+        }
+
         console.log(completEvent)
 
-     fetch("http://localhost:3000/api/events/", {
-       method: "POST",
-       body: JSON.stringify(completEvent),
+        fetch("http://localhost:3000/api/events/", {
+          method: "POST",
+          body: JSON.stringify(completEvent),
 
-       headers: {
-         "Content-type": "application/json"
-       }
-     })
-     
-       .then((response) => response.json())
-       .then((json) => console.log(json));
+          headers: {
+            "Content-type": "application/json"
+          }
+        })
+
+          .then((response) => response.json())
+          .then((json) => console.log(json));
+      } else {
+        window.alert("Please submit every field!")
+      }
+    }
+  }
 }
-

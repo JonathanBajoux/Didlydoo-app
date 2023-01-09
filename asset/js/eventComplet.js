@@ -1,4 +1,5 @@
 import { delEvent } from "./delEvent.js";
+import { patch } from "./patch.js";
 
 export async function eventsComplet() {
     //récupération des données Json pour les events
@@ -18,6 +19,15 @@ export async function eventsComplet() {
         let newEvent = document.createElement('div')
         newEvent.classList.add('event')
         document.getElementById('main').appendChild(newEvent)
+
+        //créa bouton edit
+        let newEventPatchButton = document.createElement("button")
+        newEventPatchButton.innerText = "Edit";
+        newEventPatchButton.className = "event-patch"
+        newEvent.appendChild(newEventPatchButton)
+
+        let id = elem.id;
+        newEventPatchButton.addEventListener('click', () => { patch(id); })
 
         //créa titre 
         let newEventTitle = document.createElement('h2')
