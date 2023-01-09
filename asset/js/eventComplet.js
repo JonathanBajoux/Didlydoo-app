@@ -1,3 +1,5 @@
+import { delEvent } from "./delEvent.js";
+
 export async function eventsComplet() {
     //récupération des données Json pour les events
     const response = await fetch(
